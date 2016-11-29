@@ -5,7 +5,6 @@ namespace Coins.Objects
 {
   public class Change
   {
-    string[] _coinNames = new string[] {"Quarter", "Dime", "Nickle", "Penny"};
     int[] _coinValues = new int[] {25, 10, 5, 1};
     private int _inputAmount;
     private int _total;
@@ -22,7 +21,7 @@ namespace Coins.Objects
       int numberOfDimes = 0;
       int numberOfNickles = 0;
       int numberOfPennies = 0;
-      for (int i = 0; i < _coinNames.Length; i ++)
+      for (int i = 0; i < _coinValues.Length; i ++)
       {
         while (_inputAmount >= _coinValues[i])
         {
